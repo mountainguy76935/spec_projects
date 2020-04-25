@@ -1,0 +1,7 @@
+.quote-page{
+    text-align: center;
+    height: 625px;
+    width: 100%;
+    background-color: black;
+    transition-duration: .8s;
+  }

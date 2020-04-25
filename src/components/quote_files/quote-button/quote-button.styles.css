@@ -1,0 +1,27 @@
+.quote-button{
+    width: 90px;
+    height: 28px;
+    cursor: pointer;
+    border: none;
+    transition-duration: .8s;
+    float: right;
+    color: white;
+    opacity: 1;
+    border-radius: 20px;
+    margin: 5%;
+    position: absolute;
+    left: 60%;
+    top: 63%;
+}   
+
+
+.quote-button.active{    
+    transform: scale(1.1);
+}
+
+.button_title{
+    font-size: 11px;
+    position: static;
+    margin-top: 6px;
+    left: 28px
+}

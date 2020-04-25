@@ -1,0 +1,10 @@
+.calc-app{
+    padding-top: 8%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    background-color: black
+}
+
+.directions{
+    margin-top: -6px
+}
