@@ -37,7 +37,7 @@ export const Welcome = () => {
       function addSpot(event) {
         let counter = 0;
         let num = Math.floor(Math.random()*phrases.length);
-        let num1 = Math.floor(Math.random()*180-90);
+        let num1 = Math.floor(Math.random()*90-45);
         function exec() {
         if (disabled === false) {
             let spot = document.querySelector('.spot');

@@ -27,6 +27,7 @@ handleChange = () => {
             this.setState({
                 loaded: true
             })
+        .catch((err) => console.log(err))
         })
       }
 
