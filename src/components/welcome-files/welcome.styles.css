@@ -1,0 +1,48 @@
+@keyframes letters {
+    0% {
+      height: auto;
+      width: auto;
+      font-size: 0px;
+      border-radius: 0px;
+      opacity: 1;
+    }
+    100% {
+      font-size: 50px;
+      height: auto;
+      width: auto;
+      border-radius: 0px;
+      opacity: 1;
+    }
+  }
+  
+  .spot{
+    position: absolute;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    z-index: 0;
+    background-color: transparent;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    cursor: default
+  };
+  
+  .cleared{
+    height: 100%;
+    width:  100%;
+  }
+  
+  .whole-thing{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  .stop-shape{
+    position: absolute;
+    z-index: 10;
+    background-color: teal;
+    border: none;
+    bottom: 90%
+  }

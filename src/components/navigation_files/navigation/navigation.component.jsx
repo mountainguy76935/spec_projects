@@ -17,6 +17,14 @@ export const Navigation = (props) => {
                 {
                     title: 'Random Quote',
                     path: '/quote'
+                },
+                {
+                    title: 'Weather',
+                    path: '/weather'
+                },
+                {
+                    title: 'Tic Tac Toe',
+                    path: '/tictactoe'
                 }
             ]
 

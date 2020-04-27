@@ -1,0 +1,14 @@
+.weather_app{
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+  
+  .temp-button{
+    cursor: pointer
+  }
+  
+  .title{
+    padding-top: 50px
+  }
+  

@@ -8,13 +8,13 @@
 }
 
 .row{
-    padding-top: 50px;
+    padding-top: 60px;
     margin-top: -10px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     position: fixed;
     width: 10%;
-    height: 100%;
+    height: 80%;
     z-index: 10;
     font-family: 'Open Sans Condensed', sans-serif;
     transition: .3s;
@@ -23,12 +23,12 @@
 
 .row1{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     margin-top: -15px;
     margin-left: -70px;
     position: fixed;
     width: 0%;
-    height: 0%;
+    height: 100%;
     z-index: 0;
     font-weight: lighter;
     opacity: 0;

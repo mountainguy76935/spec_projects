@@ -16,7 +16,7 @@
     margin-top: 0px;
     width: 25px;
     height: 25px;
-    background-color: #EFC413;
+    background-color: black;
     transition-duration: .5s;
     z-index: 10;
     cursor: pointer;
@@ -53,4 +53,5 @@
     z-index: 11;
     padding: 1%;
     cursor: pointer;
+    height: 20px
 }
