@@ -15,7 +15,7 @@ export class QuotePage extends React.Component {
 handleChange = () => {
     let arr = new Array(9).fill(9).map((a,i) => (a-i).toString()).concat(['a', 'b', 'c', 'd', 'e', 'f']);
     arr = '#'+new Array(6).fill('').map(a => arr[Math.floor(Math.random()*15)].toString()).join('')
-    return fetch('http://quotes.stormconsultancy.co.uk/random.json?origin=*')
+    return fetch('https://quotes.stormconsultancy.co.uk/random.json?origin=*')
         .then(resp => resp.json())
         .then(data => {
             this.setState({
