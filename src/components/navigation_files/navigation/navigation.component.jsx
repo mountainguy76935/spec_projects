@@ -15,7 +15,7 @@ export const Navigation = (props) => {
                     path: '/daily_pic'
                 },
                 {
-                    title: 'Random Quote',
+                    title: 'Simpsons Quote',
                     path: '/quote'
                 },
                 {
