@@ -16,8 +16,8 @@ const App = () => {
           <Navigation/>
           <Route exact path='/' component = { WelcomePage } />
           <Route exact path='/weather' component = { Weather } />
-          <Route exact path='/daily_pic' component = { DailyPicture } />
-          <Route exact path='/calculator' component = { CalcApp } />
+          <Route exact path='/daily_pic' component={ DailyPicture } />
+          <Route exact path='/calculator' component={ CalcApp } />
           <Route exact path='/quote' component = { QuotePage } />
           <Route exact path='/tictactoe' component = { TicTacToePage } />
         </div>

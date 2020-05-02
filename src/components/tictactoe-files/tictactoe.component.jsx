@@ -36,6 +36,9 @@ export const TicTacToe = (props) => {
 
     const handleClick = (index, letter) => {
         let newArr = arr;
+        if (newArr[index] === 'X' || newArr[index] === 'O') {
+            return;
+        }
         newArr.splice(index, 1, turn ? 'X' : 'O')
         setTurn(!turn);
         setArr(newArr);

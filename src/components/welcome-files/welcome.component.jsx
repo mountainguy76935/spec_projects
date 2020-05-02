@@ -4,12 +4,14 @@ import './welcome.styles.css'
 export const Welcome = () => {
     const [disabled, setDisabled] = React.useState(false)
     const phrases = [
-        "what's up??",
+        "What's up??",
         "HEllooooo",
         "Greetings",
         'Welcome!',
         'HI!',
-        "How's life?"
+        "How's life?",
+        "What cracks?!",
+        "&#161;Bienvenidos!"
     ]
 
     React.useEffect(
