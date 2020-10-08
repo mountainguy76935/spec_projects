@@ -5,6 +5,15 @@ export const DrumButton = (props) => {
 
     const node = React.useRef()
 
+    const handlekeyDown = (e) => {
+        e.preventDefault();
+        if (e.keyCode === props.sound.keyCode){
+            handleClick()
+        } else {
+            return;
+        }
+    }
+
     const handleClick = () => {
         if (props.poweredOff) {
             return;
@@ -15,13 +24,21 @@ export const DrumButton = (props) => {
         sound.play()
     }
 
+    React.useEffect(() => {
+        window.addEventListener('keydown', handlekeyDown);
+        return () => window.removeEventListener('keydown', handlekeyDown)
+    }, [])
+
     return(
-        <div className='drum-button' onClick={handleClick}>
+        <div 
+            className='drum-button' 
+            onClick={handleClick}
+        >
             <audio
                 ref={node}
                 src={props.sound.url}
             />
-            <p>{props.sound.id}</p>
+            <p>{props.sound.keyTrigger}</p>
         </div>
     )
 }
