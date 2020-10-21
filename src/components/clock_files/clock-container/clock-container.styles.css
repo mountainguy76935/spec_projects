@@ -1,0 +1,53 @@
+.clock-container{
+    position: relative;
+    top: 10%;
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.clock-session{
+    width: 180px;
+    height: 180px;
+    background-color: transparent;
+    color: black;
+    display: flex;
+    flex-flow: row wrap;
+    border: solid #c0d3eb 6px;
+    border-radius: 35%;
+}
+
+.session-controls{
+    width: 100%;
+    margin: auto
+}
+
+.clock-session h3{
+    width: 100%
+}
+
+.clock-session h1{
+    width: 100%
+}
+
+.clock-container h1{
+    width: 100%;
+    color: black;
+    font-size: 45px;
+    font-weight: bold
+}
+
+.fa{
+    cursor: pointer;
+    padding: 10%;
+    font-size: 25px;
+    transition-duration: .2s
+}
+
+.fa:hover{
+    color: rgb(79, 172, 79);
+}

@@ -29,6 +29,10 @@ export const Navigation = (props) => {
                 {
                     title: 'Tic Tac Toe',
                     path: '/tictactoe'
+                },
+                {
+                    title: '25+5 Clock',
+                    path: '/clock'
                 }
             ]
 

@@ -4,9 +4,8 @@ import { Volume } from '../volume/volume.component';
 import { CustomToggle } from '../custom-toggle/custom-toggle.component';
 import './container.styles.css'
 
-export const DrumMachineContainer = () => {
+export const DrumMachineContainer = (props) => {
   const [poweredOff, setPoweredOff] = React.useState(false)
-  const [volume, setVolume] = React.useState(.3);
 
   const bankOne = [
     {
@@ -142,7 +141,7 @@ export const DrumMachineContainer = () => {
                 sound={sound}
                 key={key}
                 poweredOff={poweredOff}
-                volume={volume}
+                volume={props.volume}
               />
             )
           })
@@ -153,7 +152,7 @@ export const DrumMachineContainer = () => {
         <div className='kit-name'>
           <p>{activeBank ? 'Bank Two' : 'Bank One'}</p>
         </div>
-        <Volume value={volume} setVolume={setVolume} />
+        <Volume value={props.volume} setVolume={props.setVolume} />
         <CustomToggle name='Bank' handleToggle={setActiveBank} />
       </div>
     </div>

@@ -3,9 +3,11 @@ import { DrumMachineContainer } from '../components/drum_machine_files/container
 import './drum-machine.styles.css'
 
 export const DrumMachinePage = () => {
+    const [volume, setVolume] = React.useState(.3);
+
     return (
         <div className="drum-machine-page">
-            <DrumMachineContainer />
+            <DrumMachineContainer volume={volume} setVolume={setVolume}/>
         </div>
     )
 }

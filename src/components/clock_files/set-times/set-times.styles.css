@@ -1,0 +1,26 @@
+.set-times-container{
+    width: 40%;
+    height: 25%;
+    background-color: transparent;
+    margin: 2%;
+    color: black;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    text-align: center;
+}
+
+.set-time-display{
+    width: 30%;
+    margin: auto;
+    display: flex;
+}
+
+.set-time-display p{
+    margin-top: 0%;
+    font-size: 25px
+}
+
+.set-times-container h3{
+    width: 100%;
+}
