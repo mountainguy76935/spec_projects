@@ -33,6 +33,10 @@ export const Navigation = (props) => {
                 {
                     title: '25+5 Clock',
                     path: '/clock'
+                },
+                {
+                    title: 'Markdown',
+                    path: '/markdown'
                 }
             ]
 

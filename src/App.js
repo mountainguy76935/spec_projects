@@ -8,7 +8,8 @@ import { Weather } from './pages/weather-page.component'
 import { WelcomePage } from './pages/welcome-page.component'
 import { TicTacToePage } from './pages/tictactoe-page.component'
 import { DrumMachinePage } from './pages/drum-machine-page.component';
-import { ClockPage } from './pages/25-5-clock-page.component'
+import { ClockPage } from './pages/25-5-clock-page.component';
+import { MarkdownPage } from './pages/markdown-page.component'
 import './App.css';
 import './index.css';
 
@@ -24,6 +25,7 @@ const App = () => {
           <Route exact path='/tictactoe' component = { TicTacToePage } />
           <Route exact path='/drum_machine' component = { DrumMachinePage } />
           <Route exact path='/clock' component = { ClockPage } />
+          <Route exact path='/markdown' component = { MarkdownPage } />
         </div>
     );
 }

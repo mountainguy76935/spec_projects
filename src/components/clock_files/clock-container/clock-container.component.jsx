@@ -73,7 +73,7 @@ export const ClockContainer = () => {
 
     React.useEffect(() => {
         handleCurrentTime(regularTime)
-        let inter = window.setInterval(begin ? () => startClock(nodeCurrent.current, nodeBreak.current, inter) : () => null, 100);
+        let inter = window.setInterval(begin ? () => startClock(nodeCurrent.current, nodeBreak.current, inter) : () => null, 1000);
         return () => window.clearInterval(inter)
     }, [begin, regularTime])
 
